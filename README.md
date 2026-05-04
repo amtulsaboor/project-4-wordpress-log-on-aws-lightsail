@@ -57,14 +57,14 @@ User → Browser → AWS Lightsail Instance → WordPress Application
 * Selected:
 
   * Apps + OS
-  * WordPress
+  * WordPress (Bitnami)
 <img width="1710" height="1107" alt="Screenshot 2026-05-05 at 1 45 37 AM" src="https://github.com/user-attachments/assets/8bc521f1-c824-485f-8b25-73b1f85372cb" />
 
 ---
 
 ### 4. Select Pricing Plan
 
-* Chose the basic plan suitable for small websites
+* Chose the basic plan suitable for small websites (basic $5 plan)
 
 ---
 
@@ -81,8 +81,8 @@ wordpress-blog-project
 ---
 
 ## Access Website
-
-Copy the public IP and open:
+Go to the Networking Tab
+Copy the public IP and in browser open:
 
 ```id="xih5mq"
 http://your-public-ip
@@ -93,11 +93,12 @@ http://your-public-ip
 
 ## Retrieve WordPress Password
 
-Connect via SSH and run:
+Connect instance via SSH and run the command:
 
 ```bash id="0wyy6f"
 cat bitnami_application_password
 ```
+Copy the User details & Password
 <img width="1710" height="1107" alt="Screenshot 2026-05-05 at 1 23 13 AM" src="https://github.com/user-attachments/assets/cb00dc49-c7b0-460c-b52a-629c27203300" />
 
 ---
@@ -107,6 +108,7 @@ cat bitnami_application_password
 ```id="8w0s7j"
 http://your-public-ip/wp-admin
 ```
+Sign in using user credentials
 <img width="1710" height="1107" alt="Screenshot 2026-05-05 at 1 00 40 AM" src="https://github.com/user-attachments/assets/b295c442-5fc4-4653-aaaf-b18c48696eb7" />
 
 ---
